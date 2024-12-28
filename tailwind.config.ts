@@ -1,4 +1,7 @@
 import type { Config } from "tailwindcss";
+import { radixThemePreset } from 'radix-themes-tw';
+import { blackA, mauve, violet } from "@radix-ui/colors";
+
 
 export default {
   content: [
@@ -11,8 +14,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        ...blackA,
+				...mauve,
+				...violet,
       },
     },
   },
+  presets: [radixThemePreset],
   plugins: [],
 } satisfies Config;
