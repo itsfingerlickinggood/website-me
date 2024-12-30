@@ -17,6 +17,7 @@ export default {
         ...blackA,
 				...mauve,
 				...violet,
+        
       },
     },
   },

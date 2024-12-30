@@ -25,12 +25,9 @@ body {
 }
 
 .screen-main {
-  background: url("../bg.jpg") no-repeat center center fixed;
 }
 
 .screen-main-2 {
   background: url("../bg.jpg") no-repeat center center fixed;
-  border: 1px solid #000;
-  filter: invert(1);
-  color: #fff;
+  color: white;
 }
