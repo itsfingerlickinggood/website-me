@@ -21,7 +21,7 @@ export default function Home() {
             <div className="relative bg-white rounded-lg shadow-md p-4 group transition-all duration-300 ease-in-out hover:z-20">
               <h2 className="text-lg font-medium flex items-center justify-between transition-opacity duration-300 group-hover:opacity-100">
                 <span className="mr-2">{title}</span>
-                <span className="ml-2 text-2xl">{emoji}</span>
+                <span className="ml-2 text-3xl">{emoji}</span>
               </h2>
             </div>
           </Link>
