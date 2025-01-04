@@ -37,7 +37,7 @@ const BlogComponent = () => {
       <div className="flex flex-col gap-6 w-full max-w-4xl">
         {posts.map((post, index) => (
           <Link key={index} href={post.link}>
-            <div className="flex items-center justify-start p-4 hover:bg-gray-100 transition-all cursor-pointer">
+            <div className="flex items-start justify-start p-4 hover:bg-gray-100 transition-all cursor-pointer">
               <Image
                 src={post.image}
                 alt="Post"
@@ -45,13 +45,12 @@ const BlogComponent = () => {
                 width={64}
                 height={64}
               />
-              <div className="flex flex-col">
+              <div className="flex flex-col justify-between flex-grow">
                 <h3 className="font-semibold text-lg">{post.title}</h3>
-                <p className="text-sm text-gray-500">{post.date}</p>
-                <div className="flex text-sm text-gray-600 mt-1 text-blackA-5">
+                <div className="flex items-start justify-between mt-1 text-sm text-blackA-6">
                   <p className="mr-10">{post.description}</p>
                   <p className="ml-5">{post.date}</p>{" "}
-                  {/* Changed this from views to date */}
+                  {/* Date aligned with description */}
                 </div>
               </div>
             </div>
