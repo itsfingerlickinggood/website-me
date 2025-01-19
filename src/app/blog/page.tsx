@@ -10,13 +10,15 @@ const BlogComponent = () => {
 
   const posts = [
     {
+      id: 1,
       title: "Concert Announcement",
       date: "January 4, 2025",
       description: "Join us for an exciting concert experience.",
       image: imageUrl,
-      link: "/blog/concert-announcement",
+      link: "/blog/1",
     },
     {
+      id: 2,
       title: "New Music Release",
       date: "January 3, 2025",
       description: "New music drops today! Don't miss out.",
@@ -24,6 +26,7 @@ const BlogComponent = () => {
       link: "/blog/new-music-release",
     },
     {
+      id: 3,
       title: "Tour Dates Revealed",
       date: "January 2, 2025",
       description: "Check out the dates for our upcoming tour.",
@@ -33,6 +36,9 @@ const BlogComponent = () => {
 
     // More posts...
   ];
+
+  // Sort posts in descending order of ID
+  const sortedPosts = posts.sort((a, b) => b.id - a.id);
 
   return (
     <div className="blog-container p-6 bg-white text-black font-inter flex justify-center">
@@ -55,8 +61,8 @@ const BlogComponent = () => {
           </div>
         </div>
 
-        {posts.map((post, index) => (
-          <Link key={index} href={post.link}>
+        {sortedPosts.map((post) => (
+          <Link key={post.id} href={post.link}>
             <div className="flex items-start justify-start p-4 hover:bg-gray-100 transition-all cursor-pointer bg-yellow-100">
               <Image
                 src={post.image}
@@ -66,7 +72,9 @@ const BlogComponent = () => {
                 height={64}
               />
               <div className="flex flex-col justify-between flex-grow">
-                <h3 className="font-semibold text-lg">{post.title}</h3>
+                <h3 className="font-semibold text-lg">
+                  {post.id}. {post.title}
+                </h3>
                 <div className="flex items-start justify-between mt-1 text-sm text-blackA-6">
                   <p className="mr-10">{post.description}</p>
                   <p className="ml-5">{post.date}</p>
