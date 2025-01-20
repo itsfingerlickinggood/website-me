@@ -6,32 +6,16 @@ import Image from "next/image";
 import { IoArrowBack } from "react-icons/io5";
 
 const BlogComponent = () => {
-  const imageUrl = "/bg.jpg";
+  const imageUrl1 = "/design.jpg";
 
   const posts = [
     {
       id: 1,
-      title: "Concert Announcement",
-      date: "January 4, 2025",
-      description: "Join us for an exciting concert experience.",
-      image: imageUrl,
+      title: "Designing this Blog-Website",
+      date: "January 20, 2025",
+      description: "How i learned stuff by building !",
+      image: imageUrl1,
       link: "/blog/1",
-    },
-    {
-      id: 2,
-      title: "New Music Release",
-      date: "January 3, 2025",
-      description: "New music drops today! Don't miss out.",
-      image: imageUrl,
-      link: "/blog/new-music-release",
-    },
-    {
-      id: 3,
-      title: "Tour Dates Revealed",
-      date: "January 2, 2025",
-      description: "Check out the dates for our upcoming tour.",
-      image: imageUrl,
-      link: "/blog/tour-dates-revealed",
     },
 
     // More posts...
