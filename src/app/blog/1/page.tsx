@@ -105,7 +105,12 @@ const BlogPage = () => {
               alt="Blog Image"
               width={100}
               height={100}
-              style={{ marginLeft: "auto" }}
+              style={{
+                marginLeft: "auto",
+                marginRight: "auto",
+                display: "block",
+                borderRadius: "10px",
+              }}
             />
 
             <h1 className="text-7xl font-extrabold text-center mb-8 bg-green-100 p-4">
