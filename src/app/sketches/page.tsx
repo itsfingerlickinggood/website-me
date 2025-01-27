@@ -4,7 +4,7 @@ const Sketches = () => {
   return (
     <div>
       <h2>Sketches</h2>
-      <p>This is the Sketches componen</p>
+      <p>This is the Sketches componenTS.</p>
     </div>
   );
 };
